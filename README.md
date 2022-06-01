@@ -4,7 +4,7 @@
 
 ## Usage
 
-* download from the [releases page](https://github.com/ja-netfilter/ja-netfilter/releases)
+* download from the [releases page](https://gitee.com/ja-netfilter/ja-netfilter/releases)
 * add `-javaagent:/absolute/path/to/ja-netfilter.jar` argument (**Change to your actual path**)
     * add as an argument of the `java` command. eg: `java -javaagent:/absolute/path/to/ja-netfilter.jar -jar executable_jar_file.jar`
     * some apps support the `JVM Options file`, you can add as a line of the `JVM Options file`.
@@ -68,7 +68,7 @@ EQUAL,somedomain
 ## Plugin system
 
 * for developer:
-    * view the [scaffold project](https://github.com/ja-netfilter/ja-netfilter-sample-plugin) written for the plugin system
+    * view the [scaffold project](https://gitee.com/ja-netfilter/ja-netfilter-sample-plugin) written for the plugin system
     * compile your plugin and publish it
     * just use your imagination~
 
