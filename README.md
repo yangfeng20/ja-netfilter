@@ -1,6 +1,6 @@
 # ja-netfilter 2022.2.0
 
-### A javaagent framework
+### A Java Instrumentation Framework
 
 ## Usage
 

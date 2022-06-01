@@ -9,13 +9,13 @@
     <version>2022.2.0</version>
 
     <name>ja-netfilter</name>
-    <description>A javaagent framework</description>
-    <url>https://github.com/ja-netfilter/ja-netfilter</url>
+    <description>A Java Instrumentation Framework</description>
+    <url>https://githee.com/ja-netfilter/ja-netfilter</url>
 
     <licenses>
         <license>
             <name>GNU General Public License v3.0</name>
-            <url>https://github.com/ja-netfilter/ja-netfilter/blob/master/LICENSE</url>
+            <url>https://gitee.com/ja-netfilter/ja-netfilter/blob/master/LICENSE</url>
         </license>
     </licenses>
 
@@ -27,9 +27,9 @@
     </developers>
 
     <scm>
-        <connection>scm:git:https://github.com/ja-netfilter/ja-netfilter.git</connection>
-        <developerConnection>scm:git:https://github.com/ja-netfilter/ja-netfilter.git</developerConnection>
-        <url>https://github.com/ja-netfilter/ja-netfilter</url>
+        <connection>scm:git:https://gitee.com/ja-netfilter/ja-netfilter.git</connection>
+        <developerConnection>scm:git:https://gitee.com/ja-netfilter/ja-netfilter.git</developerConnection>
+        <url>https://gitee.com/ja-netfilter/ja-netfilter</url>
     </scm>
 
     <properties>
