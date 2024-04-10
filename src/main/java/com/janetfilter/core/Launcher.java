@@ -17,7 +17,7 @@ public class Launcher {
 
     private static boolean loaded = false;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception{
         URI jarURI;
         try {
             jarURI = WhereIsUtils.getJarURI();
@@ -27,6 +27,7 @@ public class Launcher {
         }
 
         String jarPath = jarURI.getPath();
+        jarPath =  new File(jarPath, "..\\ja-netfilter-jar-with-dependencies.jar").getCanonicalPath();
         if (args.length > 1 && args[0].equals(ATTACH_ARG)) {
             VMLauncher.attachVM(jarPath, args[1], args.length > 2 ? args[2] : null);
             return;
@@ -59,7 +60,7 @@ public class Launcher {
     }
 
     private static void premain(String args, Instrumentation inst, boolean attachMode) {
-        if (loaded) {
+        if (loaded && System.getProperty("janf.debug") != null && !System.getProperty("janf.debug").equals("1")) {
             DebugInfo.warn("You have multiple `ja-netfilter` as javaagent.");
             return;
         }

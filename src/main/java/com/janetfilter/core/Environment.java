@@ -76,10 +76,16 @@ public final class Environment {
     }
 
     public File getConfigDir() {
+        if ("1".equals(System.getProperty("janf.debug"))) {
+            return new File(configDir, "..\\..\\config");
+        }
         return configDir;
     }
 
     public File getPluginsDir() {
+        if ("1".equals(System.getProperty("janf.debug"))) {
+            return new File(pluginsDir, "..\\..\\plugins");
+        }
         return pluginsDir;
     }
 
